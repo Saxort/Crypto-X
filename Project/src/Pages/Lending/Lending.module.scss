@@ -1,0 +1,111 @@
+.title__img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 63.2vh;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    overflow: hidden;
+    position: relative;
+    background-image: url('https://framerusercontent.com/images/ctvsrEU2pO3iNdLPaPnHcOCfJrE.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    border-radius: 20px;
+}
+
+.title {
+    top: -40px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    position: relative;
+    font-weight: 700;
+    font-style: normal;
+    height: 50px;
+    font-family: "Unbounded", sans-serif;
+    font-size: 8vw;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.title__block {
+    width: 100%;
+}
+
+.menu {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    width: 95%;
+    height: min-content;
+    /* 70px */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+    flex: 1 0 0px;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    border-radius: 0px 0px 0px 0px;
+
+    div {
+        flex-shrink: 0;
+        width: auto;
+        /* 99px */
+        height: auto;
+        /* 20px */
+        white-space: pre;
+        position: relative;
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Schibsted Grotesk", "Schibsted Grotesk Placeholder", sans-serif;
+        color: #000000;
+        font-size: 16px;
+        letter-spacing: 0em;
+        line-height: 1.2;
+    }
+}
+
+.container {
+    display: block;
+
+    margin: 0 auto;
+    width: 77.4vw;
+}
+
+.title__description {
+    width: 100%;
+}
+
+.titleD {
+    display: flex;
+    justify-content: center;
+    margin-top: 20.7vh;
+
+    position: relative;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Unbounded", sans-serif;
+    color: #4a5759;
+    font-size: 2vw;
+    letter-spacing: 0em;
+    line-height: 1.2;
+    text-align: left;
+
+}
