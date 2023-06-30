@@ -1,11 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 .title__img {
-    flex-shrink: 0;
     width: 100%;
     height: 63.2vh;
     display: block;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
-    overflow: hidden;
     position: relative;
     background-image: url('https://framerusercontent.com/images/ctvsrEU2pO3iNdLPaPnHcOCfJrE.jpg');
     background-size: cover;
@@ -36,6 +39,127 @@
 
 .title__block {
     width: 100%;
+}
+
+.stack {
+    width: 1000px;
+    height: min-content;
+    /* 481px 
+    */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 60;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.desciption {
+    flex-shrink: 0;
+    flex: 1 0 0px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 20.8vh;
+    padding: 0px 0px 0px 0px;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+
+.title__desc,
+.main__desc {
+    width: 70%;
+    white-space: pre-wrap;
+    position: relative;
+    font-style: normal;
+    font-family: "Schibsted Grotesk",
+        "Schibsted Grotesk Placeholder",
+        sans-serif;
+    color: #4a5759;
+    letter-spacing: -0.025em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.title__desc {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+.block {
+    margin-top: 60px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img__block {
+    flex-shrink: 0;
+    flex: 1 0 0px;
+    height: 62.2vh;
+    display: flex;
+    max-width: 400px;
+    min-width: 40%;
+
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    background-image: url('https://framerusercontent.com/images/Aq79aHGHriZSIOIJ0X4XTuF1bM.jpg?scale-down-to=1024');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+
+}
+
+@media (max-width:1300px) {
+
+    .img__block {
+        height: 30vh
+    }
+
+    .desciption {
+        height: 10vh;
+    }
+}
+
+.main__desc {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+
+}
+
+.desc__button {
+    display: flex;
+    padding: 0;
+    line-height: 0%;
+    justify-content: center;
+    font-family: "Schibsted Grotesk", "Schibsted Grotesk Placeholder", sans-serif;
+    color: #4a5759;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.title__login {
+    padding-top: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
 }
 
 .menu {
@@ -86,17 +210,18 @@
     display: block;
 
     margin: 0 auto;
-    width: 77.4vw;
+    max-width: 77.4vw;
 }
 
 .title__description {
     width: 100%;
+
 }
 
 .titleD {
     display: flex;
     justify-content: center;
-    margin-top: 20.7vh;
+
 
     position: relative;
     font-weight: 700;
@@ -107,5 +232,75 @@
     letter-spacing: 0em;
     line-height: 1.2;
     text-align: left;
+
+}
+
+.buttons {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.SignUP,
+.LogIn {
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Schibsted Grotesk", "Schibsted Grotesk Placeholder", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0em;
+    line-height: 1.2;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+}
+
+.LogIn {
+
+    padding: 15px 15px 15px 15px;
+    background-color: #b0c4b1;
+    overflow: visible;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10;
+    border-radius: 8px;
+}
+
+.LogIn:hover {
+    transition: 0.2s;
+    box-shadow: 10px 0px 0px 0px black;
+}
+
+.SignUP:hover {
+    transition: 0.2s;
+    box-shadow: -10px 0px 0px 0px #b0c4b1;
+}
+
+.SignUP {
+    padding: 15px 15px 15px 15px;
+    background-color: #000000;
+    overflow: visible;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10;
+    border-radius: 8px;
+
+}
+
+
+
+@media (max-width:800px) {
+    .block {
+        display: none;
+    }
+
+    .titleD {
+        display: none;
+    }
 
 }
