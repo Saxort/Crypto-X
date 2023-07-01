@@ -3,6 +3,7 @@ import classes from "./Lending.module.scss";
 import Footer from "../../widgets/Footer/Footer";
 
 const Lending = () => {
+  
   const blockRef = useRef<HTMLDivElement>(null);
   const desc = [
     {
@@ -107,6 +108,8 @@ const Lending = () => {
         <h3 className={classes.desc__button}>
           Experience the magic of Interactive Calendar App.
         </h3>
+
+
         <div className={classes.buttons} >
           <button className={classes.SignUP}>Sign Up</button>
           <button className={classes.LogIn}>Log In</button>
